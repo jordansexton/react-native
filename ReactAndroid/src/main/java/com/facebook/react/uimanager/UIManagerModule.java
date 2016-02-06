@@ -346,6 +346,11 @@ public class UIManagerModule extends ReactContextBaseJavaModule implements
     mUIImplementation.dispatchViewManagerCommand(reactTag, commandId, commandArgs);
   }
 
+  @ReactMethod
+  public void dispatchViewManagerCommandSync(int reactTag, int commandId, ReadableArray commandArgs) {
+    mUIImplementation.dispatchViewManagerCommandSync(reactTag, commandId, commandArgs);
+  }
+
   /**
    * Show a PopupMenu.
    *
